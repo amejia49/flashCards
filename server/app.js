@@ -28,15 +28,17 @@ app.get('/', function (req, res) {
 });
 
 app.use(function (req, res, next) {
-	console.log('made it')
+
 	next();
 });
 
 app.get('/cards', function (req, res) {
 
+
     var modelParams = {};
 
     if (req.query.category) {
+        console.log(req.query.category);
     	modelParams.category = req.query.category;
     }
 

@@ -9,7 +9,8 @@
   cursor: pointer;
   outline: none; }
   .category-button.active {
-    background: gainsboro; }
+    background: gainsboro;
+    color:blue; }
 
 .flash-card {
   width: 60%;
